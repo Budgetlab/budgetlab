@@ -1,0 +1,161 @@
+<% content_for :title do %>Accueil - BudgetLab <% end %>
+
+<main role="main" class="containtAll">
+	<div class="fr-container">
+		<div class="fr-my-5w">
+		    <%= image_tag "bandeau.png", class: "fr-responsive-img", alt: "" %>
+		        <!-- L’alternative de l’image (attribut alt) doit toujours être présent, sa valeur peut-être vide ou non selon votre contexte -->
+		</div>
+		<div class="fr-grid-row fr-grid-row--gutters fr-mb-5w">
+			<div class="fr-col-12">
+				<h2>Qu'est ce que BudgetLab?</h2>
+				<p class="fr-mt-5w">Lorem...</p>
+			</div>
+		</div>
+		<div class="fr-grid-row fr-grid-row--gutters fr-my-5w">
+			<div class="fr-col-12">
+				<h2>Nos outils développés</h2>
+			</div>
+		</div>
+		<div class="fr-grid-row fr-grid-row--gutters fr-mb-5w">
+			<div class="fr-col-3">
+				<div class="fr-card fr-enlarge-link">
+				    <div class="fr-card__body">
+				        <div class="fr-card__content">
+				            <h4 class="fr-card__title">
+				                <a href="https://www.repere3.finances.gouv.fr/">REPERE3</a>
+				            </h4>
+				            <p class="fr-card__desc">REdéploiement entre Programmes des Emplois en REgion - 3%</p>
+				            <div class="fr-card__start">
+				                <ul class="fr-tags-group">
+				                    <li>
+				                        <p class="fr-tag">CBR</p>
+				                    </li>
+				                    <li>
+				                        <p class="fr-tag">Préfets</p>
+				                    </li>
+				                </ul>
+				               
+				            </div>
+				        </div>
+				    </div>
+				    <div class="fr-card__header">
+				        <div class="fr-card__img">
+				            <%= image_tag "Repere3.svg", class: "fr-responsive-img", alt: "" %>
+				        </div>
+				    </div>
+				</div>
+			</div>
+			<div class="fr-col-3">
+				<div class="fr-card fr-enlarge-link">
+				    <div class="fr-card__body">
+				        <div class="fr-card__content">
+				            <h4 class="fr-card__title">
+				                <a href="https://simulae.finances.gouv.fr/">SIMULAE</a>
+				            </h4>
+				            <p class="fr-card__desc">Simulateur de la réforme de la haute fonction publique</p>
+				            <div class="fr-card__start">
+				                <ul class="fr-tags-group">
+				                    <li>
+				                        <p class="fr-tag">Grand public</p>
+				                    </li>
+				                </ul>
+				               
+				            </div>
+				        </div>
+				    </div>
+				    <div class="fr-card__header">
+				        <div class="fr-card__img">
+				            <%= image_tag "Simulae.svg", class: "fr-responsive-img", alt: "" %>
+				        </div>
+				        <ul class="fr-badges-group">
+				            <li>
+				                <p class="fr-badge fr-badge--green-emeraude">BETA</p>
+				            </li>
+				        </ul>
+				    </div>
+				</div>
+			</div>
+			<div class="fr-col-3">
+				<div class="fr-card fr-enlarge-link">
+				    <div class="fr-card__body">
+				        <div class="fr-card__content">
+				            <h4 class="fr-card__title">
+				                <a href="https://datason-n2ohycixdq-ew.a.run.app/">SIMP3</a>
+				            </h4>
+				            <p class="fr-card__desc">Suivi des indicateurs de performance MP3</p>
+				            <div class="fr-card__start">
+				                <ul class="fr-tags-group">
+				                    <li>
+				                        <p class="fr-tag">Agents publics</p>
+				                    </li>
+				                </ul>
+				               
+				            </div>
+				        </div>
+				    </div>
+				    <div class="fr-card__header">
+				        <div class="fr-card__img">
+				            <%= image_tag "simp3.svg", class: "fr-responsive-img", alt: "" %>
+				        </div>
+				        <ul class="fr-badges-group">
+				            <li>
+				                <p class="fr-badge fr-badge--green-emeraude">BETA</p>
+				            </li>
+				        </ul>
+				    </div>
+				</div>
+			</div>
+			<div class="fr-col-3">
+				<div class="fr-card fr-enlarge-link">
+				    <div class="fr-card__body">
+				        <div class="fr-card__content">
+				            <h4 class="fr-card__title">
+				                <a href="#">Avis CBR</a>
+				            </h4>
+				            <p class="fr-card__desc">Outil de rédaction d’avis à priori et en cours de gestion, destiné aux CBR / DCB et bureaux sectoriels de la DB</p>
+				            <div class="fr-card__start">
+				                <ul class="fr-tags-group">
+				                    <li>
+				                        <p class="fr-tag">CBR</p>
+				                        <p class="fr-tag">CBCM</p>
+				                    </li>
+				                </ul>
+				               
+				            </div>
+				        </div>
+				    </div>
+				    <div class="fr-card__header">
+				        <div class="fr-card__img">
+				            <%= image_tag "aviscbr.svg", class: "fr-responsive-img", alt: "" %>
+				        </div>
+				        <ul class="fr-badges-group">
+				            <li>
+				                <p class="fr-badge fr-badge--green-emeraude">BETA</p>
+				            </li>
+				        </ul>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fr-follow">
+		<div class="fr-container">
+		<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
+			<div class="fr-col-12">
+				<div class="fr-follow__newsletter">
+                    <div>
+                        <h5 class="fr-h5 fr-follow__title">Vous êtes intéressés par BudgetLab?</h5>
+                        <p class="fr-text--sm fr-follow__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.</p>
+                    </div>
+                    <div>
+                       <a href="#" class="fr-btn" rel="noopener" target="_blank" title="Nous contacter - nouvelle fenêtre">Nous contacter <span class="fr-icon-mail-line fr-fi--sm fr-ml-1w" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+			</div>
+	
+		</div>
+		</div>
+	</div>
+</main>
