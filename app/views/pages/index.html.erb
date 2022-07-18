@@ -3,9 +3,10 @@
 <main role="main" class="containtAll">
 	<div class="fr-container">
 		<div class="fr-my-5w pr">
-		    <%= image_tag "bandeau.png", class: "fr-responsive-img", alt: "" %>
+		    <%= image_tag "bandeau.png", class: "fr-responsive-img fr-hidden fr-unhidden-sm", alt: "" %>
+		    <%= image_tag "bandeau.png", class: "fr-responsive-img fr-responsive-img--16x9 fr-hidden-sm", alt: "" %>
 		        <!-- L’alternative de l’image (attribut alt) doit toujours être présent, sa valeur peut-être vide ou non selon votre contexte -->
-		    <h1 class="texte_img">Mettre en lumière les données <br>de la Direction du Budget</h1>
+		    <h1 class="texte_img">Mettre en lumière les données <br class="fr-hidden fr-unhidden-sm">de la Direction du Budget</h1>
 		</div>
 		<div class="fr-grid-row fr-grid-row--gutters fr-mb-5w">
 			<div class="fr-col-12">
@@ -119,6 +120,8 @@
 				                <ul class="fr-tags-group">
 				                    <li>
 				                        <p class="fr-tag">CBR</p>
+				                    </li>
+				                    <li>
 				                        <p class="fr-tag">CBCM</p>
 				                    </li>
 				                </ul>
@@ -147,7 +150,7 @@
 			<div class="fr-col-12">
 				<div class="fr-follow__newsletter">
                     <div>
-                        <h5 class="fr-h5 fr-follow__title">Vous êtes intéressés par BudgetLab?</h5>
+                        <h5 class="fr-h5 fr-follow__title">BudgetLab vous intéresse?</h5>
                         <p class="fr-text--sm fr-follow__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.</p>
                     </div>
                     <div>
