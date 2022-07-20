@@ -10,33 +10,19 @@ body div{
   font-family: Marianne, sans-serif;
 }
 a{
-  color: inherit !important; 
-  text-decoration:none !important;
   &:hover{
   cursor:pointer;
-  text-decoration:none;
-  color: inherit; 
-
   }
 }
-.fr-btn{
-  color: var(--text-inverted-blue-france) !important;
-}
+
 .fr-header__brand:hover, .fr-footer__brand:hover{
   background-color:transparent !important;
 }
-.fr-link {
-    color: var(--text-action-high-blue-france) !important;
-}
-.fr-text-lg{
-  font-size:18px;
-}
+
 h1, h2{
   position:relative;
 }
-p{
-  margin:0em !important;
-}
+
 .pr{
   position: relative;
 }
