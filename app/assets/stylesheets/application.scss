@@ -33,3 +33,25 @@ a{
 .fr-card__img img {
   object-fit: contain !important
 }
+.cbleu{
+  color: var(--text-action-high-blue-france) !important;
+}
+.tc{
+  text-align:center;
+}
+.fr-follow2 {
+  padding: 0;
+
+  --title-spacing: 0 0 0.5rem;
+  --text-spacing: 0 0 1rem;
+  background-color: var(--background-alt-blue-france);
+
+  --idle: transparent;
+  --hover: var(--background-alt-blue-france-hover);
+  --active: var(--background-alt-blue-france-active);
+  border-bottom: 1px solid var(--border-default-blue-france);
+}
+
+.fr-follow2 .fr-grid-row2 > div{
+  padding: 0px 4rem;
+}

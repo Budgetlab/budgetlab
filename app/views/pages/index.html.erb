@@ -2,24 +2,63 @@
 
 <main role="main" class="containtAll">
 	<div class="fr-container">
-		<div class="fr-my-5w pr">
+		<div class="fr-my-6w pr">
 		    <%= image_tag "bandeau.png", class: "fr-responsive-img fr-hidden fr-unhidden-sm", alt: "" %>
 		    <%= image_tag "bandeau.png", class: "fr-responsive-img fr-responsive-img--16x9 fr-hidden-sm", alt: "" %>
 		        <!-- L’alternative de l’image (attribut alt) doit toujours être présent, sa valeur peut-être vide ou non selon votre contexte -->
 		    <h1 class="texte_img">Mettre en lumière les données <br class="fr-hidden fr-unhidden-sm">de la Direction du Budget</h1>
 		</div>
-		<div class="fr-grid-row fr-grid-row--gutters fr-mb-5w">
+	</div>
+	<div class="fr-container ">
+		<div class="fr-grid-row fr-grid-row--gutters ">
 			<div class="fr-col-12">
-				<h2>Qu'est ce que BudgetLab?</h2>
-				<p class="fr-mt-5w">Lorem...</p>
+				<h2 class="fr-mb-4w">Nos missions</h2>
 			</div>
 		</div>
-		<div class="fr-grid-row fr-grid-row--gutters fr-my-5w">
-			<div class="fr-col-12">
-				<h2>Nos outils développés</h2>
+		<div class="fr-grid-row fr-grid-row--gutters">
+			<div class="fr-col-12 fr-col-lg-4">
+				<div class="fr-grid-row fr-grid-row--gutters">
+					<div class="fr-col-xs-12 fr-col-lg-2 fr-col-xl-2">
+						<span class="fr-icon-lightbulb-line fr-fi--lg cbleu" aria-hidden="true"></span>
+					</div>
+					<div class="fr-col-xs-12 fr-col-lg-10 fr-col-xl-10">
+						<h3 class="fr-text--lg fr-mb-2v">Apporter de l’innovation au sein des métiers </h3>
+						<p class="fr-text--sm fr-mb-3w">En outillant numériquement le suivi des politiques publiques, nous prenons part à la modernisation des métiers de la Direction du Budget.</p>
+					</div>
+				</div>
+			</div>
+			<div class="fr-col-12 fr-col-lg-4">
+				<div class="fr-grid-row fr-grid-row--gutters">
+					<div class="fr-col-xs-12 fr-col-lg-2 fr-col-xl-2">
+						<span class="fr-icon-slideshow-line fr-fi--lg cbleu" aria-hidden="true"></span>
+					</div>
+					<div class="fr-col-xs-12 fr-col-lg-10 fr-col-xl-10">
+						<h3 class="fr-text--lg fr-mb-2v">Permettre un pilotage des politiques par la donnée </h3>
+						<p class="fr-text--sm fr-mb-3w">Avec nos travaux de centralisation, de nettoyage et de restitution rapide et efficace des données, nos outils facilitent la prise de décision via une vision globale et interactive. </p>
+					</div>
+				</div>
+			</div>
+			<div class="fr-col-12 fr-col-lg-4">
+				<div class="fr-grid-row fr-grid-row--gutters">
+					<div class="fr-col-xs-12 fr-col-lg-2 fr-col-xl-2">
+						<span class="fr-icon-medal-line fr-fi--lg cbleu" aria-hidden="true"></span>
+					</div>
+					<div class="fr-col-xs-12 fr-col-lg-10 fr-col-xl-10">
+						<h3 class="fr-text--lg fr-mb-2v">Valoriser les données de la Direction du Budget </h3>
+						<p class="fr-text--sm fr-mb-3w">A l’aide d’algorithmes et d’outils open-source de data-visualisation, nous rendons les données de la Direction du Budget attractives, manipulables et intelligibles. </p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="fr-grid-row fr-grid-row--gutters fr-mb-5w">
+		<hr class="fr-grid-row--end fr-col-offset-xs-12 fr-col-offset-12 fr-mb-3w">
+	</div>
+	<div class="fr-container">
+		<div class="fr-grid-row fr-grid-row--gutters">
+			<div class="fr-col-12">
+				<h2 class="fr-mb-4w">Nos outils développés</h2>
+			</div>
+		</div>
+		<div class="fr-grid-row fr-grid-row--gutters ">
 			<div class="fr-col-12 fr-col-lg-3">
 				<div class="fr-card fr-enlarge-link">
 				    <div class="fr-card__body">
@@ -142,8 +181,50 @@
 				</div>
 			</div>
 		</div>
+		<hr class="fr-grid-row--end fr-col-offset-xs-12 fr-col-offset-12 fr-mb-6w">
 	</div>
 
+
+	<div class="fr-follow2">
+		<div class="fr-container">
+			<div class="fr-grid-row fr-grid-row--gutters">
+				<div class="fr-col-12">
+					<h2 class="fr-my-4w">L'équipe</h2>
+				</div>
+			</div>
+			<div class="fr-grid-row fr-grid-row--gutters fr-grid-row2 ">
+				<div class="fr-col-6 fr-col-lg-3 tc">
+					<figure class="fr-content-media" role="group" aria-label="Benoît Laroche de Roussane, Sous-directeur de la deuxième sous-direction">
+    					<div class="fr-content-media__img"><%= image_tag "benoit.png", class: "fr-responsive-img fr-ratio-1x1", alt: "" %></div>
+					</figure>
+					<h3 class="fr-text--lg fr-mb-2v ">Benoît Laroche de Roussane</h3>
+					<p class="fr-text--sm fr-mb-3w">Sous-directeur de la deuxième sous-direction</p>
+				</div>
+				<div class="fr-col-6 fr-col-lg-3 tc">
+					<figure class="fr-content-media" role="group" aria-label="Philippe Sauvage, Adjoint au sous-directeur de la deuxième sous-direction">
+    					<div class="fr-content-media__img"><%= image_tag "Philippe.png", class: "fr-responsive-img fr-ratio-1x1", alt: "" %></div>
+					</figure>
+					<h3 class="fr-text--lg fr-mb-2v ">Philippe Sauvage</h3>
+					<p class="fr-text--sm fr-mb-3w">Adjoint au sous-directeur de la deuxième sous-direction</p>
+				</div>
+				<div class="fr-col-6 fr-col-lg-3 tc">
+					<figure class="fr-content-media" role="group" aria-label="Alexandra Leschi, Développeuse et ancienne EIG promotion 4">
+    					<div class="fr-content-media__img"><%= image_tag "alexandra.png", class: "fr-responsive-img fr-ratio-1x1", alt: "" %></div>
+					</figure>
+					<h3 class="fr-text--lg fr-mb-2v ">Alexandra Leschi</h3>
+					<p class="fr-text--sm fr-mb-3w">Développeuse et ancienne EIG promotion 4</p>
+				</div>
+				<div class="fr-col-6 fr-col-lg-3 tc">
+					<figure class="fr-content-media" role="group" aria-label="Lou Vettier, Designeuse et ancienne EIG promotion 4">
+    					<div class="fr-content-media__img"><%= image_tag "lou.png", class: "fr-responsive-img fr-ratio-1x1", alt: "" %></div>
+					</figure>
+					<h3 class="fr-text--lg fr-mb-2v ">Lou Vettier</h3>
+					<p class="fr-text--sm fr-mb-3w">Designeuse et ancienne EIG promotion 4</p>
+				</div>
+			</div>
+			<hr class="fr-grid-row--end fr-col-offset-xs-12 fr-col-offset-12 fr-mb-3w">
+		</div>
+	</div>
 	<div class="fr-follow">
 		<div class="fr-container">
 		<div class="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
@@ -151,7 +232,7 @@
 				<div class="fr-follow__newsletter">
                     <div>
                         <h5 class="fr-h5 fr-follow__title">BudgetLab vous intéresse?</h5>
-                        <p class="fr-text--sm fr-follow__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.</p>
+                        <p class="fr-text--sm fr-follow__desc">Pour échanger avec nous, partager vos idées ou vos retours d'expériences, contactez-nous par mail en cliquant sur le bouton ci-contre.</p>
                     </div>
                     <div>
                        <a href="#" class="fr-btn" rel="noopener" target="_blank" title="Nous contacter - nouvelle fenêtre">Nous contacter</a>
