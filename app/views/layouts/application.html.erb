@@ -4,6 +4,9 @@
     <title>BudgetLab</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title><%= content_for?(:title) ? yield(:title) : "Operateurs" %></title>
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,10 +14,13 @@
     <%= stylesheet_link_tag "dsfr", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "utility", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
+    <%= javascript_include_tag 'custom/dsfr.module.min', module: true %>
+    <%= javascript_include_tag 'custom/dsfr.nomodule.min', nomodule: true %>
     <%= favicon_link_tag 'favicon.ico' %>
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
     <% if Rails.env.production? %>
-      <script async defer data-website-id="ccee5ce6-f76e-45e4-98f4-40dc5bc68bfb" src="https://s.abla.io/abla.js"></script>
+      <script async defer data-website-id="c982d2d9-67db-4c6e-a695-c0deac645fe1" src="https://s.abla.io/abla.js"></script>
     <% end %>
   </head>
 
