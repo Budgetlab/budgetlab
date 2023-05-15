@@ -1,16 +1,6 @@
+# frozen_string_literal: true
+
+# Controller Pages statiques
 class PagesController < ApplicationController
-
-	def index
-		
-	end 
-
-	def error_404
-		if params[:path] && params[:path] == "500"
-			render 'error_500'
-		end 
-	end 
-
-	def error_500
-    	
-  	end 
+  def index; end
 end
