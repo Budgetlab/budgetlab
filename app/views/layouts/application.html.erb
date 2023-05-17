@@ -15,8 +15,9 @@
     <%= javascript_include_tag 'custom/dsfr.module.min', module: true %>
     <%= javascript_include_tag 'custom/dsfr.nomodule.min', nomodule: true %>
     <%= favicon_link_tag 'favicon/favicon.ico' %>
-    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png"><!-- 180×180 -->
-    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+    <%= favicon_link_tag 'favicon/favicon.svg' %>
+    <%= favicon_link_tag "favicon/apple-touch-icon.png", rel: "apple-touch-icon" %>
+
     <% if Rails.env.production? %>
       <script async defer data-website-id="c982d2d9-67db-4c6e-a695-c0deac645fe1" src="https://s.abla.io/abla.js"></script>
     <% end %>
