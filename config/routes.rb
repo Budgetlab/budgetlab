@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'pages#index'
-  resources :documents
 
   get '/mentions-legales', to: 'pages#mentions_legales'
   get '/donnees-personnelles', to: 'pages#donnees_personnelles'
