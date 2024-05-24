@@ -54,7 +54,11 @@ jobs:
         uses: ruby/setup-ruby@v1 # v1.146.0
         with:
           ruby-version: '3.3'
-          bundler-cache: true
+          # bundler-cache: true
+      - name: Update Gemfile.lock
+        run: bundle lock --add-platform x86_64-linux
+      - name: Bundle install
+        run: bundle install
       # Add or replace any other lints here
       - name: Security audit dependencies
         run: bundle exec bundle audit --update
