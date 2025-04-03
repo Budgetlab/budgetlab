@@ -33,7 +33,7 @@ jobs:
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1 # v1.146.0
         with:
-          ruby-version: '3.3'
+          ruby-version: '3.4'
       - name: Update Gemfile.lock
         run: bundle lock --add-platform x86_64-linux
       - name: Bundle install
@@ -53,7 +53,7 @@ jobs:
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1 # v1.146.0
         with:
-          ruby-version: '3.3'
+          ruby-version: '3.4'
           # bundler-cache: true
       - name: Update Gemfile.lock
         run: bundle lock --add-platform x86_64-linux
