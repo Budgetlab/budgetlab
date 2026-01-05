@@ -44,10 +44,20 @@ ENV RAILS_ENV=production
 ENV RAILS_SERVE_STATIC_FILES=true
 # Redirect Rails log to STDOUT for Cloud Run to capture
 ENV RAILS_LOG_TO_STDOUT=true
+
 # [START cloudrun_rails_dockerfile_key]
 ARG MASTER_KEY
 ENV RAILS_MASTER_KEY=${MASTER_KEY}
 # [END cloudrun_rails_dockerfile_key]
+
+# Database configuration from build args (no defaults - must be passed during build)
+ARG PRODUCTION_DB_NAME
+ARG PRODUCTION_DB_USERNAME
+ARG CLOUD_SQL_CONNECTION_NAME
+
+ENV PRODUCTION_DB_NAME=${PRODUCTION_DB_NAME}
+ENV PRODUCTION_DB_USERNAME=${PRODUCTION_DB_USERNAME}
+ENV CLOUD_SQL_CONNECTION_NAME=${CLOUD_SQL_CONNECTION_NAME}
 
 # pre-compile Rails assets with master key
 RUN bundle exec rake assets:precompile

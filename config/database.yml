@@ -85,7 +85,7 @@ production:
   #username: budgetlab
   #password: <%= ENV["BUDGETLAB_DATABASE_PASSWORD"] %>
 
-  database: budgetlabdb
-  username: postgres
+  database: <%= ENV["PRODUCTION_DB_NAME"] %>
+  username: <%= ENV["PRODUCTION_DB_USERNAME"] %>
   password: <%= Rails.application.credentials.gcp[:db_password] %>
   host:   "/cloudsql/<%= ENV.fetch("CLOUD_SQL_CONNECTION_NAME", "apps-354210:europe-west1:budgetlab")%>"
